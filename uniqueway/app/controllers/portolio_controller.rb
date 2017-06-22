@@ -1,11 +1,7 @@
-class PortolioController
-	attr_reader :env
+require_relative '../../../application_controller'
 
-	def initialize(env)
-		@env = env
-	end
-
+class PortolioController < ApplicationController
 	def index
-		'Portolio#index'
+		render "Portolio#index"
 	end
 end

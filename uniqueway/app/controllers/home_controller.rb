@@ -1,13 +1,7 @@
-# require_relative 'application_controller'
+require_relative '../../../application_controller'
 
-class HomeController
-	attr_reader :env
-
-	def initialize(env)
-		@env = env
-	end
-
+class HomeController < ApplicationController
 	def index
-		'home#index'
+		render "Home#index"
 	end
 end
